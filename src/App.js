@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import LoginForm from './components/LoginForm/LoginForm';
 import RegistrationForm from './components/RegistrationForm/RegistrationForm';
 import Home from './components/Home/Home';
+import ConfirmCode from './components/ConfirmCode/ConfirmCode';
 import {
   BrowserRouter as Router,
   Switch,
@@ -30,6 +31,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home/>
+            </Route>
+            <Route path="/confirm">
+              <ConfirmCode />
             </Route>
           </Switch>
           <AlertComponent errorMessage={errorMessage} hideError={updateErrorMessage}/>
